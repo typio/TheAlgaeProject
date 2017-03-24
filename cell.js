@@ -15,7 +15,7 @@ Cell.prototype.isOffScreen = function() {
 
 Cell.prototype.show = function() {
   fill(41, 128, 80);
-  stroke(41, 128, 80);
+  noStroke();
   var pos = this.body.position;
   push();
   translate(pos.x, pos.y);
