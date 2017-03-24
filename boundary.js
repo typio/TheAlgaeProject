@@ -2,6 +2,7 @@ function Boundary(x, y, w, h) {
   var options = {
     isStatic: true
   };
+
   this.body = Bodies.rectangle(x, y, w, h, options);
   //adds body to world
   this.w = w;
@@ -10,8 +11,6 @@ function Boundary(x, y, w, h) {
 }
 
 Boundary.prototype.show = function() {
-  fill(255);
-  stroke(255);
   var pos = this.body.position;
   push();
   translate(pos.x, pos.y);
